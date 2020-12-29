@@ -8,9 +8,9 @@ num = 55 + 1
 print(num)
 
 squareRoot = '1 ** 0.5'  # If you were to print this variable, what would the output be? Comment your answer below.
-'1 ** 0.5'
+# 1 ** 0.5
 squareRoot = 1 ** 0.5  # What about the value of this?
-1
+# 1
 
 # Create a variable assigned to any floating point value and print it.
 g = 4.27
