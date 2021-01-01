@@ -1,0 +1,12 @@
+name: sync w/ upstream changes
+on:
+  schedule:
+    - cron: '0 1 * * 2,5'
+  workflow_dispatch:
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Merge w/ Upstream
+        run: bash ./Scripts/sync-upstream.sh
