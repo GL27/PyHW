@@ -65,4 +65,4 @@ but 1900 is not.
 
 
 def is_leap_year(year):
-    return (((year % 4 == 0) and (year % 100 != 0)) or (year % 400 == 0))
+    return (((year % 4 == 0) and (year % 100 != 0)) and (year % 400 == 0))
