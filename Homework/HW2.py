@@ -12,7 +12,11 @@ places to round to. For instance, round(1.2348, 3) returns 1.235.
 
 
 def calculate_tax(price):
-    return None
+    return price + (price * 0.0875)
+
+print(calculate_tax(4.5))
+
+
 
 
 '''
@@ -23,7 +27,8 @@ hypotenuse.
 
 
 def compute_hypotenuse(a, b):
-    return None
+    return a ** 2 + b ** 2
+print(compute_hypotenuse(2, 5))
 
 '''
 Problem 3
@@ -35,16 +40,17 @@ function is correct, then you should get at least 3.141 plus or minus 0.001.
 
 
 def distance(x1, y1, x2, y2):
-    return None
+    return (((x2 - x1) ** 2) + ((y2 - y1) ** 2)) ** 0.5
+print(distance(2,4,5,8))
 
 
-# def monteCarlo(numPoints):
-#     insideCount = 0
-#     for point in range(numPoints):
-#         x = random.uniform(0, 1)
+#def monteCarlo(numPoints):
+#    insideCount = 0
+#   for point in range(numPoints):
+#       x = random.uniform(0, 1)
 #         y = random.uniform(0, 1)
 #         if distance(x, y, 0, 0) <= 1:
-#             insideCount += 1
+#           insideCount += 1
 #     return 4 * insideCount / numPoints
 #
 # sum = 0
@@ -61,4 +67,4 @@ but 1900 is not.
 
 
 def is_leap_year(year):
-    return None
+    return
