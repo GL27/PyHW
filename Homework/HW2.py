@@ -17,8 +17,6 @@ def calculate_tax(price):
     return total
 
 
-
-
 '''
 Problem 2
 Write a function named compute_hypotenuse that takes in two ints a, b in a right triangle and computes the length of the
@@ -67,4 +65,4 @@ but 1900 is not.
 
 
 def is_leap_year(year):
-    return (year % 4 == 0) and (year % 400 == 0)
+    return (((year % 4 == 0) and (year % 400 == 0)) or (year % 100 != 0))
