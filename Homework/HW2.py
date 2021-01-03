@@ -13,8 +13,7 @@ places to round to. For instance, round(1.2348, 3) returns 1.235.
 
 def calculate_tax(price):
     total = price + (price * 0.08875)
-    total = round(price, 2)
-    return total
+    return total(round(price, 2))
 
 
 
