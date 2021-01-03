@@ -12,9 +12,11 @@ places to round to. For instance, round(1.2348, 3) returns 1.235.
 
 
 def calculate_tax(price):
-    return price + (price * 0.0875)
+    total = price + (price * 0.08875)
+    total = round(price, 2)
+    return total
 
-print(calculate_tax(4.5))
+
 
 
 
