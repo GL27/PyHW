@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.ACTION_TOKEN }}
+          token: ${{ secrets.ACTIONS_TOKEN }}
       - name: Merge w/ Upstream
         run: bash ./Scripts/sync-upstream.sh
