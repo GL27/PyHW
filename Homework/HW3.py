@@ -30,9 +30,9 @@ rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig.
 
 
 def zodiac(year):
-    signs = ['rat', 'ox', 'tiger', 'rabbit', 'dragon', 'snake', 'horse', 'sheep', 'monkey', 'rooster', 'dog', 'pig']
+    signs = ['monkey', 'ox', 'tiger', 'rabbit', 'rat', 'snake', 'dog', 'sheep', 'dragon', 'rooster', 'horse', 'pig']
     return signs[year % 12]
-print(zodiac(1900))
+
 
 
 """
