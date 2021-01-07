@@ -7,7 +7,7 @@ Return the range of a list of ints. Assume that it is sorted.
 
 
 def list_range(arr):
-    return len(arr)
+    return arr[-1] - arr[0]
 
 
 """
@@ -31,7 +31,7 @@ rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig.
 
 def zodiac(year):
     z = ['rat', 'ox', 'tiger', 'rabbit', 'dragon', 'snake', 'horse', 'sheep', 'monkey', 'rooster', 'dog', 'pig']
-    return year == z[:] % 12
+    return year == le
 
 
 """
@@ -43,5 +43,5 @@ You should only need to modify the return statement to do this. The result shoul
 
 def seventh_number():
     arr = list(range(0, 778))
-    return list(range[::-1][1:7])
+    return arr[::7]
 
