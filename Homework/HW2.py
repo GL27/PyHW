@@ -16,7 +16,6 @@ def calculate_tax(price):
     total = round(total, 2)
     return total
 
-
 '''
 Problem 2
 Write a function named compute_hypotenuse that takes in two ints a, b in a right triangle and computes the length of the
@@ -62,7 +61,6 @@ Write a function that determines whether a year is a leap year. There are two ru
 4, unless it is a multiple of 100, where only years divisible by 400 are leap years. So, 2000 and 1992 are leap years, 
 but 1900 is not.
 '''
-
 
 def is_leap_year(year):
     return (((year % 4 == 0) and (year % 100 != 0)) or (year % 400 == 0))
