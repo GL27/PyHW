@@ -30,7 +30,7 @@ rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig.
 
 
 def zodiac(year):
-    z = ['rat', 'ox', 'tiger', 'rabbit', 'dragon', 'snake', 'horse', 'sheep', 'monkey', 'rooster', 'dog', 'pig']
+    signs = ['rat', 'ox', 'tiger', 'rabbit', 'dragon', 'snake', 'horse', 'sheep', 'monkey', 'rooster', 'dog', 'pig']
     return
 
 
@@ -43,5 +43,6 @@ You should only need to modify the return statement to do this. The result shoul
 
 def seventh_number():
     arr = list(range(0, 778))
-    return arr[::-1][1:7]
+    return arr[::-7]
+print(seventh_number())
 
