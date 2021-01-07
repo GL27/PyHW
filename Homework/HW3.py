@@ -19,7 +19,7 @@ elements.
 
 def switch(arr, a, b):
     arr[a], arr[b] = arr[b], arr[a]
-    return
+    return arr
 
 
 """
@@ -42,5 +42,5 @@ You should only need to modify the return statement to do this. The result shoul
 
 def seventh_number():
     arr = list(range(0, 778))
-    return list(range[:7:-1])
+    return list(range[-1::7])
 
