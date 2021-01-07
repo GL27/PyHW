@@ -31,7 +31,7 @@ rat, ox, tiger, rabbit, dragon, snake, horse, sheep, monkey, rooster, dog, pig.
 
 def zodiac(year):
     z = ['rat', 'ox', 'tiger', 'rabbit', 'dragon', 'snake', 'horse', 'sheep', 'monkey', 'rooster', 'dog', 'pig']
-    return year == le
+    return
 
 
 """
