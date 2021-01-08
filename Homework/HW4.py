@@ -7,7 +7,15 @@ Return the average of a list of values using a while loop.
 
 
 def while_average(arr):
-    return None
+    i = 0
+    sum = 0
+    while(i < len(arr)):
+        sum = sum + list[i]
+        i += 1
+    return sum / len(arr)
+
+
+
 
 
 """
@@ -17,7 +25,14 @@ Return the average of a list of values using a for loop.
 
 
 def loop_average(arr):
-    return None
+    s = 0
+    for num in arr:
+        s += num
+    return s / len(arr)
+
+
+
+
 
 
 """
@@ -27,7 +42,12 @@ Return the number of palindromes in a list. A palindrome is a word that is the s
 
 
 def palindromes(arr):
-    return None
+    p = 0
+    for elements in arr:
+        a = elements[::-1]
+        if elements == a:
+            p += 1
+
 
 
 """
@@ -37,7 +57,12 @@ Return the maximum value of a list. Do not use the max() function.
 
 
 def list_max(arr):
-    return None
+    a = arr[0]
+    for num in arr:
+        if a < num:
+            a = num
+    return a
+
 
 
 """
