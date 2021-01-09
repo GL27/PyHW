@@ -33,4 +33,4 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        pytest Homework/Tests/test_HW3.py
+        pytest Homework/Tests/test_HW4.py
