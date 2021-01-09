@@ -87,4 +87,4 @@ You should use the function int(), which can convert strings into ints. For exam
 
 
 def binary(str):
-    return None
+    return int(str, 2)
