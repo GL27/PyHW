@@ -87,4 +87,10 @@ You should use the function int(), which can convert strings into ints. For exam
 
 
 def binary(str):
-    return int(str, 2)
+    i = 0
+    for x in int(str[::-1]):
+        i += (2 ** i)
+    return i
+
+
+
