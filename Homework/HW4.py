@@ -47,6 +47,7 @@ def palindromes(arr):
         a = elements[::-1]
         if elements == a:
             p += 1
+    return p
 
 
 
