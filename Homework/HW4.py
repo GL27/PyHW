@@ -86,13 +86,21 @@ You should use the function int(), which can convert strings into ints. For exam
 """
 
 
+#def binary(str):
+#   i = 0
+#   for x in (str[::-1]):
+#      i += (2 ** x)
+#  return i
+
 def binary(str):
     i = 0
-    for x in (str[::-1]):
-        i += (2 ** x) + int(str)
+    for x in str:
+        i = i * 2 + int(x)
     return i
 
-print(binary(101))
+str = '10100111'
+print(binary(str))
+
 
 
 
