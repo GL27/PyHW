@@ -22,8 +22,12 @@ Python has two functions that will be useful for this:
     - ord() takes in a character and gives its ASCII code, so ord('a') will return 97. 
     - For doing the opposite, chr() takes in an int and returns the corresponding character. For instance, chr(97) 
     returns 'a'. 
+It might also help to use .islower() and .isupper(), which return whether a string is lowercase. For instance,
+'c'.islower() returns True. There are multiple ways to solve this, so they might not be necessary.
 Keep in mind that a Caesar Cipher only affects letters, so keep everything else, such as punctuation and whitespace, 
 the same. 
+Note: To make this somewhat easier, the shift will only be positive numbers, so you will go through the alphabet
+from A to Z and back around to A.
 The table: http://www.asciitable.com/
 """
 
@@ -34,7 +38,7 @@ def caesar_cipher(message, shift):
 
 """
 Problem 3
-Given a letter as a string, return a string saying whether it is a vowel or consonant. For 'y', return 'sometimes'.
+Given a letter as a string, return a string saying whether it is a 'vowel' or 'consonant'. For 'y', return 'sometimes'.
 """
 
 
