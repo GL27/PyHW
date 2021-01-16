@@ -39,13 +39,15 @@ The table: http://www.asciitable.com/
 
 
 def caesar_cipher(message, shift):
-    solution = ''
+    solution = " "
     for x in range(len(message)):
         letter = message[x]
         if (letter.isupper()):
             solution += chr((ord(letter) + shift - 65) % 26 + 65)
-        else:
+        elif (letter.islower()):
             solution += chr((ord(letter) + shift - 97) % 26 + 97)
+        else:
+            solution += letter
     return solution
 
 
