@@ -85,4 +85,4 @@ def pig_latin(word):
     else:
         for x in range(len(word)):
             if word[x] in ['a', 'e', 'i', 'o', 'u']:
-                return word[1:] + word[0] + 'ay'
+                return word[1:len(word)] + word[0:x] + 'ay'
