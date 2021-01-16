@@ -39,7 +39,15 @@ The table: http://www.asciitable.com/
 
 
 def caesar_cipher(message, shift):
-    return None
+    solution = ''
+    for x in range(len(message)):
+        letter = message[x]
+        if (letter.isupper()):
+            solution += chr((ord(letter) + shift - 65) % 26 + 65)
+        else:
+            solution += chr((ord(letter) + shift - 97) % 26 + 97)
+    return solution
+
 
 
 """
@@ -49,7 +57,7 @@ Given a letter as a string, return a string saying whether it is a 'vowel' or 'c
 
 
 def is_vowel(letter):
-    if letter in 'aeiou':
+    if letter in ['a', 'e', 'i', 'o', 'u']:
         return 'Vowel'
     elif letter in 'y':
         return 'Sometimes'
