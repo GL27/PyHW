@@ -39,7 +39,7 @@ The table: http://www.asciitable.com/
 
 
 def caesar_cipher(message, shift):
-    solution = " "
+    solution = ""
     for x in range(len(message)):
         letter = message[x]
         if (letter.isupper()):
