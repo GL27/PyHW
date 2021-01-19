@@ -5,7 +5,7 @@ def digit_sum(num):
         return 0
     if num < 0:
         num = num * -1
-        return (num % 10) + digit_sum(num // 10)
+    return (num % 10) + digit_sum(num // 10)
 
     """"
     Recursively compute the sum of the digits in a given number.
