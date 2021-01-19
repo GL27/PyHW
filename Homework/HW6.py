@@ -5,7 +5,6 @@ def digit_sum(num):
         return 0
     if num < 0:
         num = num * -1
-    else:
         return (num % 10) + digit_sum(num // 10)
 
     """"
