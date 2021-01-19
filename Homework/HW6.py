@@ -1,6 +1,10 @@
 # WARNING: Non-recursive solutions will not be considered correct.
 
 def digit_sum(num):
+    if num == 0:
+        return 0
+    else:
+        return (num % 10) + (num/10)
     """
     Recursively compute the sum of the digits in a given number.
     In case of a negative number, ignore the negative sign.
@@ -58,6 +62,8 @@ def subset_sum(nums, target):
 
 
 def permute(array):
+    if len(array) == 0:
+        return []
     """
     Recursively generate all permutations of a given list.
 
