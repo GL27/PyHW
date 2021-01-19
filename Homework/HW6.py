@@ -3,19 +3,22 @@
 def digit_sum(num):
     if num == 0:
         return 0
+    if num < 0:
+        return (num * -1)
     else:
         return (num % 10) + digit_sum(num // 10)
-    """"
-    Recursively compute the sum of the digits in a given number.
-    In case of a negative number, ignore the negative sign.
 
-    Hint: Either cast num to a string or find some other way to extract digits.
+  #  """"
+  #  Recursively compute the sum of the digits in a given number.
+  #  In case of a negative number, ignore the negative sign.
 
-    :param num: the number
-    :type num: int
-    :return: the sum of the digits of {num}
-    :rtype: int
-    """
+  #  Hint: Either cast num to a string or find some other way to extract digits.
+
+    #:param num: the number
+    #:type num: int
+    #:return: the sum of the digits of {num}
+    #:rtype: int
+    #"""
 
 
 def hanoi(rings):
