@@ -21,11 +21,10 @@ def digit_sum(num):
 
 
 def hanoi(rings):
-    if rings == 0:
-        return 0
     if rings == 1:
         return 1
-    return 2 ** hanoi(rings - 1)
+    return 2 * hanoi(rings - 1)
+
 """
     The Tower of Hanoi is a classic mathematical toy. You are given three rods.
     Upon the first rod are a number of discs in ascending order (largest on the bottom, smallest on top).
