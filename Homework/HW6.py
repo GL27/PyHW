@@ -51,6 +51,13 @@ def hanoi(rings):
 
 
 def subset_sum(nums, target):
+    if target == 0:
+        return True
+    if len(nums) == 0:
+        return False
+    return subset_sum(nums[1:], target - nums[0]) or subset_sum(nums[1:], target)
+    return False
+
     """
     Recursively determine whether some subset of a given list of numbers sums to a target value.
     Negative values are allowed, both as the target and in the list of numbers.
@@ -70,8 +77,17 @@ def subset_sum(nums, target):
 
 
 def permute(array):
+    if len(array) == 1:
+        return [array]
     if len(array) == 0:
-        return []
+        return [array]
+    answer = []
+    for x in array:
+        remainder = [t for t in array if t != x]
+        i = permute(remainder)
+        for y in i:
+            answer.append([x] + y)
+    return answer
     """
     Recursively generate all permutations of a given list.
 
