@@ -1,4 +1,5 @@
 # WARNING: Non-recursive solutions will not be considered correct.
+# Gaby and my partner was Kendrick (100% of the credit)
 
 def digit_sum(num):
     if num == 0:
