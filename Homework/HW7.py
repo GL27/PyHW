@@ -49,19 +49,19 @@ and if decelerating will make it go past 0. If either situation happens, don't c
 
 class Car:
 
-def __init__(self, brand, max_speed, current_speed):
-    self.brand = brand
-    self.max_speed = max_speed
-    self.current_speed = current_speed
+    def __init__(self, brand, max_speed, current_speed):
+        self.brand = brand
+        self.max_speed = max_speed
+        self.current_speed = current_speed
 
-def accelerate(self):
-    if self.current_speed + 10 > self.max_speed:
-        return self.current_speed
-    else:
-        return self.current_speed
+    def accelerate(self):
+        if self.current_speed + 10 > self.max_speed:
+            return self.current_speed
+        else:
+            return self.current_speed
 
-def decelerate(self):
-    if self.current_speed - 5 < 0:
-        return self.current_speed
-    else:
-        self.current_speed
+    def decelerate(self):
+        if self.current_speed - 5 < 0:
+            return self.current_speed
+        else:
+            self.current_speed
