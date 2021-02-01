@@ -39,7 +39,8 @@ def flip_phone(message):
     result = ''
     for character in message:
         for x, y in dict.items():
-            if character in int(message) + 1:
+            character = int()
+            if character in range(y.index(character)) + 1:
                 result += x
     return result
 
