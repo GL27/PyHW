@@ -23,6 +23,21 @@ for capitalization, you can adjust the input for the table. You can ignore every
 
 
 def flip_phone(message):
+
+    dict = {
+        '1': ['. , , , ?, !, :'],
+        '2': ['a, b, c'],
+        '3': ['d, e, f'],
+        '4': ['g, h, i'],
+        '5': ['j, k, l'],
+        '6': ['m, n, o'],
+        '7': ['p, q, r, s'],
+        '8': ['t, u, v'],
+        '9': ['w, x, y, z'],
+        '0': [' ']
+    }
+    result = ''
+
     return None
 
 
@@ -34,9 +49,10 @@ For instance, 'zzz' has one unique character while 'Hello, World!' has 10.
 
 
 def unique_characters(string):
-    characters = dict()
+    characters = {}
     for x in string:
-        return None
+        characters[x] = True
+    return len(characters)
 
 
 """
@@ -59,9 +75,6 @@ class Car:
              self.current_speed
         else:
             self.current_speed += 10
-
-
-
 
     def decelerate(self):
         if self.current_speed - 5 <= 0:
