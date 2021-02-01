@@ -40,7 +40,7 @@ def flip_phone(message):
     for character in message:
         for x, y in dict.items():
             if character in y:
-                for a in range(y.index(character)):
+                for a in range(y.index(character)) + 1:
                     print(x)
 
 
