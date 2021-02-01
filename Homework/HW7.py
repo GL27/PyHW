@@ -23,7 +23,6 @@ for capitalization, you can adjust the input for the table. You can ignore every
 
 
 def flip_phone(message):
-    string =
     return None
 
 
@@ -37,9 +36,7 @@ For instance, 'zzz' has one unique character while 'Hello, World!' has 10.
 def unique_characters(string):
     characters = dict()
     for x in string:
-        character[x]
-
-    return None
+        return None
 
 
 """
@@ -50,6 +47,7 @@ and add 10 to current_speed in accelerate and subtract 5 in decelerate. Check if
 and if decelerating will make it go past 0. If either situation happens, don't change the speed.
 """
 
+class Car:
 
 def __init__(self, brand, max_speed, current_speed):
     self.brand = brand
