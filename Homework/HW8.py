@@ -63,7 +63,7 @@ a boolean for whether the given datetime object is a weekday. For instance, pass
 return False since 1/31/2021 is a Sunday.
 """
 
-import
+
 def is_weekday(date_obj):
     return None
 
