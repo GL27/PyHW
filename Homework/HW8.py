@@ -1,4 +1,4 @@
-# YOUR NAME HERE
+# Gaby
 
 """
 Problem 1
@@ -18,17 +18,26 @@ shuffle(arr):
 You will be tested on all three functions.
 """
 
+import random
 
 def is_sorted(arr):
-    return None
-
+    n = len(arr)
+    for i in range(0, n-1):
+        if arr[i] > arr[i+1]:
+            return False
+    return True
 
 def shuffle(arr):
-    return None
+    n = len(arr)
+    for i in range(0, n):
+        x = random.randint(0, n-1)
+        arr[i], arr[x] = arr[x], arr[i]
 
 
 def bogosort(arr):
-    return None
+    n = len(arr)
+    while not is_sorted(arr):
+        shuffle(arr)
 
 
 
@@ -40,7 +49,7 @@ pi/4 = 4arctan(1/5) - arctan(1/239)
 Use arctan from the math module. Its documentation is here: https://docs.python.org/3/library/math.html
 """
 
-
+import math
 def approx_pi():
     return None
 
@@ -54,7 +63,7 @@ a boolean for whether the given datetime object is a weekday. For instance, pass
 return False since 1/31/2021 is a Sunday.
 """
 
-
+import
 def is_weekday(date_obj):
     return None
 
